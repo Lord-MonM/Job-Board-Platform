@@ -1,0 +1,28 @@
+{
+  "name": "job-board-platform",
+  "version": "1.0.0",
+  "description": "Build a job board platform where employers can post job listings and job seekers can search and apply for jobs.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lord-MonM/Job-Board-Platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lord-MonM/Job-Board-Platform/issues"
+  },
+  "homepage": "https://github.com/Lord-MonM/Job-Board-Platform#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "cookie-session": "^2.1.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "nodemon": "^3.1.10",
+    "parser": "^0.1.4"
+  }
+}
