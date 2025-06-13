@@ -4,6 +4,7 @@ const { default: helmet } = require("helmet");
 const cors = require("cors");
 const rateLimiter = require("express-rate-limit")
 const cookieParser = require("cookie-parser");
+const xss = require("xss-clean");
 const dbConnect = require("./config/dbConnect.js");
 const authRouter = require("./routes/authRoutes.js")
 const userRouter = require("./routes/userRoutes.js")
@@ -28,7 +29,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(helmet());
 app.use(cookieParser());
-// app.use(xss());
+app.use(xss());
 
 
 //Routes
